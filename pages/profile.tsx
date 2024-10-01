@@ -2,7 +2,12 @@ import { GetServerSideProps } from 'next';
 import { getSession } from 'next-auth/react';
 
 export default function Profile() {
-  return <div>Hello World Nate!</div>;
+  return (
+    <div>
+      <h1>User profile info here lmao</h1>
+      <h2>Last logged in at {new Date().toLocaleString()}</h2>
+    </div>
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {

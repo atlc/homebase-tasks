@@ -2,7 +2,7 @@ import { GetServerSideProps } from 'next';
 import { getSession } from 'next-auth/react';
 
 export default function Profile() {
-  return <div>Profile</div>;
+  return <div>Hello World!</div>;
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {
